@@ -16,6 +16,6 @@ jobs:
         uses: crazy-max/ghaction-setup-docker@v1
 
       - name: Build Apptainer SIF
-        uses: hotwa/apptainerbuild@v1.0
+        uses: hotwa/apptainerbuild@v1.1
         with:
           dockerfile_path: 'debian.dockerfile'
