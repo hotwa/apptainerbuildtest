@@ -1,0 +1,21 @@
+name: Test Apptainerbuild Action
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_sif:
+    runs-on: ubuntu-latest
+    name: Build SIF from Dockerfile
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker
+        uses: docker/setup-docker@v1
+
+      - name: Build Apptainer SIF
+        uses: hotwa/apptainerbuild@v1.0
+        with:
+          dockerfile_path: 'debian.dockerfile'
