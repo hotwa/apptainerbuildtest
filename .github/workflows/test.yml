@@ -12,11 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Docker
-        uses: docker-practice/actions-setup-docker@master
-
       - name: Build Apptainer SIF
         uses: hotwa/apptainerbuild@v1.0
         with:
           dockerfile_path: 'debian.dockerfile'
-
