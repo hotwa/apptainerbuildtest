@@ -19,4 +19,8 @@ jobs:
           dockerfile_path: 'debian.dockerfile'
           # apptainer_key: ${{ secrets.APPTAINER_KEY }}
           
-          
+      - name: Upload SIF file
+        uses: actions/upload-artifact@v2
+        with:
+          name: SIF-file
+          path: /github/workspace/*.sif.tar.gz
