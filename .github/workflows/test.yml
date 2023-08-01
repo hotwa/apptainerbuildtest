@@ -19,4 +19,3 @@ jobs:
         uses: hotwa/apptainerbuild@v1.0
         with:
           dockerfile_path: 'debian.dockerfile'
-          
