@@ -12,7 +12,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Build Apptainer SIF
-        uses:  hotwa/docker-to-sif-action@v1.0
+      - name: Convert Dockerfile to SIF
+        uses: hotwa/docker-to-sif-action@v1.0
         with:
-          dockerfile_path: 'debian.dockerfile'
+          dockerfile_path: 'path/to/dockerfile'
+          # apptainer_key: ${{ secrets.APPTAINER_KEY }}
