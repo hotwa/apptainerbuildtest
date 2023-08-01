@@ -15,7 +15,6 @@ jobs:
       - name: Convert Dockerfile to SIF
         uses: hotwa/docker-to-sif-action@v1.0
         with:
-          dockerfile_path: 'path/to/dockerfile'
+          dockerfile_path: 'debian.dockerfile'
           # apptainer_key: ${{ secrets.APPTAINER_KEY }}
-          
           
