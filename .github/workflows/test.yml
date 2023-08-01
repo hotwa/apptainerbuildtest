@@ -23,5 +23,5 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: SIF-file
-          path: /github/workspace/*.sif.tar.gz
+          path: /github/workspace/debian.dockerfile.sif.tar.gz
           
