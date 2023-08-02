@@ -14,11 +14,10 @@ jobs:
         uses: hotwa/docker-to-sif-action@v2.0
         with:
           apptainer_key: ${{ secrets.APPTAINER_KEY }}
-          aliyun_image: registry.cn-hangzhou.aliyuncs.com/hotwa/ubuntu:ubuntu-jammy-desktop
+          aliyun_image: registry.cn-hangzhou.aliyuncs.com/hotwa/pydock3:latest
           aliyun_username: ${{ secrets.ALIYUN_USERNAME }}
           aliyun_password: ${{ secrets.ALIYUN_PASSWORD }}
 
-          
       - name: Upload SIF file
         uses: actions/upload-artifact@v2
         with:
