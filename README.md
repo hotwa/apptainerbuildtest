@@ -1,1 +1,1 @@
-# test hotwa/apptainerbuild@v1.0
+# test hotwa/docker-to-sif-action@v1.0
