@@ -1,4 +1,4 @@
-name: Test Apptainerbuild Action
+name: Test Apptainerbuild Action v1.0
 on: 
   workflow_dispatch:
 
