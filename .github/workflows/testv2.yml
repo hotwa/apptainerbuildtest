@@ -13,7 +13,7 @@ jobs:
       - name: Convert Dockerfile to SIF
         uses: hotwa/docker-to-sif-action@v2.0
         with:
-          apptainer_key: ${{ secrets.APPTAINER_KEY }}
+          # apptainer_key: ${{ secrets.APPTAINER_KEY }}
           aliyun_image: registry.cn-hangzhou.aliyuncs.com/hotwa/pydock3:latest
           aliyun_username: ${{ secrets.ALIYUN_USERNAME }}
           aliyun_password: ${{ secrets.ALIYUN_PASSWORD }}
